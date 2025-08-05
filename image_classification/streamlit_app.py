@@ -16,7 +16,7 @@ classes = ['airplane', 'automobile', 'bird', 'cat', 'deer',
 def load_model():
     model = resnet18()
     model.fc = nn.Linear(model.fc.in_features, 10)
-    model.load_state_dict(torch.load("model.pth", map_location=torch.device('cpu')))
+    model.load_state_dict(torch.load("image_classification/model.pth", map_location=torch.device('cpu')))
     model.eval()
     return model
 
