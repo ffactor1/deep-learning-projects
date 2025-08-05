@@ -1,7 +1,5 @@
 # image_classification/streamlit_app.py
 # Streamlit application for image classification using a pre-trained model
-pip install streamlit torchvision torch pillow
-
 import streamlit as st
 import torch
 import torch.nn as nn
